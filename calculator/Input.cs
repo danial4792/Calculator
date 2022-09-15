@@ -45,7 +45,7 @@ namespace calculator
 
         public bool IsOperator(char sign)
         {
-            return !Char.IsDigit(sign) && !Char.IsLetter(sign) && !sign.Equals("(");
+            return !(Char.IsDigit(sign) || Char.IsLetter(sign) || sign.Equals("("));
         }
     }
 }
